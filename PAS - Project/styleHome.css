@@ -1,0 +1,109 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+body {
+    height: 100px;   
+    overflow-y : scroll;
+}
+
+/*.teste {
+    margin-left: 1px;
+}*/
+
+#menu {
+    /*margin-top:-64px;*/
+    list-style: none;
+    text-align: right;
+    font-family: sans-serif;
+    font-size: 15pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: rgb(36, 35, 35);
+    border: 1px groove rgba(199, 2, 18, 0.986);
+}
+
+#menu li .teste {
+    width: 30px;
+    background-color: white;
+}
+
+#menu li {
+    display: inline;
+    background-color: rgb(36, 35, 35);
+}
+
+#menu li a {
+    display: inline-block;
+    color: rgb(251, 255, 7);
+    text-decoration: none;
+    padding: 20px;
+    background-color: rgb(36, 35, 35);
+    transition: 0.5s ease-in;
+}
+
+#menu li a:hover {
+    color: rgba(199, 2, 18, 0.986);
+}
+
+#logo {
+    margin-top: 80px;
+    text-align: center;
+    animation: 2s moveLogo;
+}
+
+#catchphrase p {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14pt;
+    color: rgb(251, 255, 7);
+    font-family: DejaVu Sans Mono, monospace;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+
+#ftr {
+    height: 40px;
+    margin-top: 52px;
+    text-align: center;
+    background-color: rgb(36, 35, 35);
+    padding: 14px;
+}
+
+#ftr footer {
+    font-size: 10pt;
+    font-weight: bold;
+    font-family: DejaVu Sans Mono, monospace;
+    text-transform: uppercase;
+    background-color: rgb(36, 35, 35);
+}
+
+/* Events */
+@keyframes moveLogo {
+    0% {
+        transform: translateY(11rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Scrollbar configs */
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+    background: rgb(36, 35, 35);        /* color of the tracking area */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(114, 114, 113);    /* color of the scroll thumb */
+    border-radius: 10px;
+    border: 1px groove rgb(36, 35, 35);  /* creates padding around scroll thumb */
+}
